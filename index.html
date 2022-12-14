@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather forecast application</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section id="authenticator">
+        <input type="checkbox" id="show">
+    <label for="show" class="show-btn">Login Form</label>
+
+    <div class="authenticator-page">
+        <label for="show" class="close-btn" title="close">×</label>
+        <h1>Welcome</h1>
+        <form action="#">
+            <label>Email or Phone</label>
+            <input type="text">
+            <label>Password</label>
+            <input type="password">
+            <a href="#">Forgot Password?</a>
+            <button>Submit</button>
+            <div class="link">Not a member? <a href="#">Sigup here</a></div>
+            
+        <closeform></closeform></form>
+    </section>
+    <section id="time">
+        <div class="container">
+            <div class="current-info">
+    
+                <div class="date-container">
+                    <div class="time" id="time">
+                        10:30 <span id="am-pm">PM</span>
+                    </div>
+                    <div class="date" id="date">
+                        Monday, 25 May
+                    </div>
+    
+                    <div class="others" id="current-weather-items">
+                        
+                        
+                    </div>
+                </div>
+    
+                <div class="place-container">
+                    <div class="time-zone" id="time-zone">Nairobi</div>
+                    <div id="country" class="country">Kenya</div>
+                </div>
+            </div>
+    
+            
+        </div>
+    </section>
+
+    <section id="weatherInformation" class="weather-information">
+        <div class="card">
+            <div class="search">
+                <input type="text" class="searchbar" placeholder="Enter city name...">
+                <button id="search">search</button>
+            </div>
+            <div class="weather">
+                <h2 class="city">Weather in Nairobi</h2>
+                <div class="temparature">Temparature: 48°c</div>
+                <img src="" alt="" class="icon">
+                <div class="description">sunny</div>
+                <div class="humidity">humidity: 60%</div>
+                <div class="wind-speed">wind speed: 6.2 km/h</div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="/index.js"></script>
+</body>
+</html>
