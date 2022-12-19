@@ -15,6 +15,7 @@ body{
     overflow:hidden;
     height: 100vh;
     font-family: 'Poppins', sans-serif;
+    display: flex;
 }
 
 
@@ -29,39 +30,26 @@ body{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.date-container{
-    font-weight: 100;
-}
-.date-container .time{
-    font-size: 70px;
-}
-
-.date-container #am-pm{
-    font-size: 30px;
-    margin-left: 20px;
-}
-
-.date-container .date{
-    font-size: 30px;
-}
 
 .place-container{
     text-align: end;
 }
 
 .place-container .time-zone{
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 100;
+    margin-top: 200px;
 }
 
 .place-container .country{
-    font-size: 12px;
+    font-size: 30px;
     font-weight: 700;
+    margin-top: 50px;
 }
 
 .weather-information {
     height: 100vh;
-    /* display: flex; */
+    display: flex; 
     justify-content: center;
     align-items: center;
     margin-left: 300px;
@@ -78,6 +66,7 @@ body{
     max-width: 420px;
     margin: 1em;
     font-size: 20px;
+    margin-top: 100px;
     
 }
 
@@ -101,16 +90,9 @@ body{
     transform: translate(-50%, -50%);
 }
 
-input[type="checkbox"]{
-    display: none;
-}
-
-#show:checked ~ .authenticator-page{
-    display: block;
-}
 
 .authenticator-page{
-    display: none;
+
     width: 450px;
     padding: 20px;
     border-radius: 10px;
@@ -192,6 +174,9 @@ a{
 
 a:hover{
     text-decoration: underline;
+}
+.hidden{
+display: none;
 }
 
 

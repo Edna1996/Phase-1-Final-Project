@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <header>
+        <label for="show" class="show-btn">Login Form</label>
+    </header>
+    
     <section id="authenticator">
-        <input type="checkbox" id="show">
-    <label for="show" class="show-btn">Login Form</label>
 
     <div class="authenticator-page">
         <label for="show" class="close-btn" title="close">×</label>
@@ -21,7 +23,7 @@
             <label>Password</label>
             <input type="password">
             <a href="#">Forgot Password?</a>
-            <button>Submit</button>
+            <button id="submit">Submit</button>
             <div class="link">Not a member? <a href="#">Sigup here</a></div>
             
         <closeform></closeform></form>
@@ -29,20 +31,6 @@
     <section id="time">
         <div class="container">
             <div class="current-info">
-    
-                <div class="date-container">
-                    <div class="time" id="time">
-                        10:30 <span id="am-pm">PM</span>
-                    </div>
-                    <div class="date" id="date">
-                        Monday, 25 May
-                    </div>
-    
-                    <div class="others" id="current-weather-items">
-                        
-                        
-                    </div>
-                </div>
     
                 <div class="place-container">
                     <div class="time-zone" id="time-zone">Nairobi</div>
@@ -54,15 +42,15 @@
         </div>
     </section>
 
-    <section id="weather-information" class="wether-information">
+    <section id="weather-information" class="wether-information hidden">
         <div class="card">
-            <div class="search">
+            <form class="search-form">
                 <input type="text" class="searchbar" placeholder="Enter city name...">
                 <button id="search">search</button>
-            </div>
+            </form>
             <div class="weather">
                 <h2 class="city">Weather in Nairobi</h2>
-                <div class="temparature">Temparature: 48°c</div>
+                <div class="temparature">Temparature: 248°f</div>
                 <img src="" alt="" class="icon">
                 <div class="description">sunny</div>
                 <div class="humidity">humidity: 60%</div>
